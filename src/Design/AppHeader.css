@@ -1,0 +1,85 @@
+/* Header container styles */
+.custom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 2px solid grey; /* Adds grey underline to the entire header */
+  background-color: white; /* Set background color */
+  
+}
+
+/* Logo styles */
+.logo {
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: whitesmoke;
+  background-image: url('../Resource/Images/BoschLogo.png'); /* Set logo image */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header styles for Ant Design */
+.ant-layout-header {
+  background-color: white; /* Ensure header background matches */
+  padding: 0; /* No extra padding */
+}
+
+/* Menu styles */
+.ant-menu {
+  background-color: transparent; /* Make menu background transparent to show header background */
+  border-bottom: none; /* Remove any default underline from the menu */
+}
+
+/* Menu item styles */
+.ant-menu-item {
+  color: black; /* Default text color for menu items */
+}
+
+/* Hover styles for menu items */
+.ant-menu-item:hover {
+  background-color: #1890ff; /* Change hover background color */
+  color: white; /* Change hover text color */
+}
+
+/* Selected menu item styles */
+.ant-menu-item-selected {
+  background-color: #1890ff; /* Change selected background color */
+  color: white; /* Change selected text color */
+  font-weight: bold; /* Optional: make selected item bold */
+}
+
+/* Username display styles */
+.username-display {
+  color: black; /* Default text color for username display */
+  margin-right: 16px; /* Add some spacing on the right */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.custom-header {
+  flex-direction: column; /* Stack elements vertically on small screens */
+  align-items: flex-start;
+  padding: 10px 0; /* Reduce padding */
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack menu items vertically */
+  align-items: flex-start;
+  margin: 0; /* Remove default margin */
+}
+
+.menu .ant-menu-item {
+  width: 100%; /* Make menu items full width */
+}
+
+.username-display {
+  margin-top: 10px; /* Add spacing above username display */
+  width: 100%; /* Make username display full width */
+  text-align: left; /* Align text to the left */
+}
+
+}

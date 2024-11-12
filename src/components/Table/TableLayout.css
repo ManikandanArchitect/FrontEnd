@@ -1,0 +1,11 @@
+.custom-card {
+    margin: 5px; /* Margin of 10px on all sides */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for elevation */
+}
+
+.custom-search {
+    display: flex; /* Use flexbox layout */
+    justify-content: flex-end; /* Align items to the end (right) */
+    margin-bottom: 16px; /* Add 16px margin at the bottom */
+    margin-right: 10px; /* Add 5px margin to the right */
+}
